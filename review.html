@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Review submissions</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="it-page">
+
+<header class="it-header">
+  <nav class="it-nav">
+      <a href="index.html">Home</a>
+      <a href="quote.html">Quote</a>
+      <a href="theme.html">Themes</a>
+      <a href="reflections.html">Reflections</a>
+      <a href="share.html">Share yours</a>
+  </nav>
+  <h1 class="it-banner-title">Review submissions</h1>
+  <p class="it-banner-sub" data-counts-label>Approve a quote to post it, or reject it.</p>
+</header>
+
+<main class="it-main it-review" data-review>
+  <p class="it-note">Submissions are stored in this browser. <span data-counts></span></p>
+
+  <h2 class="it-h2">Waiting for review</h2>
+  <div class="it-review-grid" data-pending-list></div>
+
+  <h2 class="it-h2">Posted</h2>
+  <div class="it-review-grid" data-approved-list></div>
+
+  <h2 class="it-h2">Add one by hand</h2>
+  <form class="it-form" data-manual-form>
+    <div class="it-field"><label for="mq">Quote</label><textarea id="mq" name="quote" rows="3" required></textarea></div>
+    <div class="it-field"><label for="ma">Author or source</label><input id="ma" name="author"></div>
+    <div class="it-field"><label for="mt">Theme</label><select id="mt" name="theme"><option>Inspirational</option><option>Relatable</option><option>Humor</option><option>Other</option></select></div>
+    <div class="it-field"><label for="mw">Why it matters (optional)</label><textarea id="mw" name="why" rows="2"></textarea></div>
+    <div class="it-field"><label for="mn">Sent by (optional)</label><input id="mn" name="name"></div>
+    <div><button class="it-btn" type="submit">Add to review</button></div>
+  </form>
+</main>
+
+<footer class="it-footer"><span><a href="index.html">Back to site</a></span><span></span></footer>
+<script src="script.js" defer></script>
+</body>
+</html>

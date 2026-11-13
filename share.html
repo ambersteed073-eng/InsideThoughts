@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inside Thoughts – Share yours</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="it-page">
+
+<header class="it-header">
+  <nav class="it-nav">
+      <a href="index.html">Home</a>
+      <a href="quote.html">Quote</a>
+      <a href="theme.html">Themes</a>
+      <a href="reflections.html">Reflections</a>
+      <a href="share.html" aria-current="page">Share yours</a>
+  </nav>
+  <h1 class="it-banner-title">Share yours</h1>
+  <p class="it-banner-sub">Send a quote that has stayed with you.</p>
+</header>
+
+<main>
+<div class="it-main">
+  <h2 class="it-h2">Before you send</h2>
+  <div class="it-panel">
+    <p>[Note on whether submissions are reviewed before appearing.]</p>
+    <p class="it-note">[Guideline one] · [Guideline two]</p>
+  </div>
+</div>
+
+<section class="it-band">
+  <img src="images/cozy-coffee.jpeg" alt="Have a quote that inspires you? Share it with us!">
+  <div class="it-band-side">
+      <form class="it-form" action="#" method="post" data-submit-form>
+        <div class="it-field"><label for="q">Quote</label><textarea id="q" name="quote" rows="6" required></textarea></div>
+        <div class="it-field"><label for="a">Author or source</label><input id="a" name="author"></div>
+        <div class="it-field"><label for="t">Theme</label>
+          <select id="t" name="theme"><option value="">Choose a theme</option><option>Inspirational</option><option>Relatable</option><option>Humor</option><option>Other</option></select></div>
+        <div class="it-field"><label for="w">Why it matters to you (optional)</label><textarea id="w" name="why" rows="3"></textarea></div>
+        <div class="it-field"><label for="n">Your name (optional)</label><input id="n" name="name"></div>
+        <div class="it-hp" aria-hidden="true"><label>Leave this blank<input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <p class="it-status" data-status role="status"></p>
+        <div><button class="it-btn" type="submit">Submit quote</button></div>
+      </form>
+  </div>
+</section>
+
+<div class="it-main">
+  <div class="it-thanks" data-thanks hidden><strong>Thank you!</strong><p class="it-note">[Confirmation message and what happens next.]</p>
+    <div class="it-actions" style="justify-content:center"><a class="it-btn it-btn--outline it-btn--small" href="share.html">Share another</a><a class="it-btn it-btn--small" href="theme.html">Browse quotes</a></div></div>
+
+  <h2 class="it-h2">From visitors</h2>
+  <div class="it-grid" data-approved>
+    <article class="it-card"><span class="it-tag">Relatable</span><p class="it-quote">“[Visitor quote text.]”</p><p class="it-author">— [Author] · shared by [Name]</p></article>
+    <article class="it-card"><span class="it-tag">Relatable</span><p class="it-quote">“[Visitor quote text.]”</p><p class="it-author">— [Author] · shared by [Name]</p></article>
+    <article class="it-card"><span class="it-tag">Relatable</span><p class="it-quote">“[Visitor quote text.]”</p><p class="it-author">— [Author] · shared by [Name]</p></article>
+  </div>
+</div>
+</main>
+
+<footer class="it-footer">
+  <span><a href="#">About</a><a href="theme.html">Themes</a><a href="share.html">Share yours</a><a href="#">Contact</a></span>
+  <span>[Footer note]</span>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

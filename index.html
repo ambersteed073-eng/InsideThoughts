@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inside Thoughts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="wrap">
+    <header class="site-header">
+      <a class="logo" href="index.html">insidethoughts.co</a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="quote.html">Quotes</a></li>
+          <li><a href="theme.html">Themes</a></li>
+          <li><a href="reflections.html">Reflections</a></li>
+          <li><a href="share.html">Share yours</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <main>
+
+    <div class="featured">
+      <div class="wrap"> 
+        
+        <blockquote>
+          <p class="quote">“Be the reason you smile today. And if that fails, be the reason someone else questions your sanity.”</p>
+          <footer>-Author Unknown</footer>
+        </blockquote>
+        <a class="button" href="reflections.html">Read my reflection</a>
+      </div>
+    </div>
+
+    <section id="themes">
+      <div class="wrap">
+        <h2>Browse by theme</h2>
+        <ul class="themes">
+          <li><a href="theme.html">All</a></li>
+          <li><a href="theme-humor.html">Humor</a></li>
+          <li><a href="theme-inspirational.html">Inspirational</a></li>
+          <li><a href="theme-relatable.html">Relatable</a></li>
+          <li><a href="theme-other.html">Other</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="quotes">
+      <div class="wrap">
+        <h2>Quotes and reflections</h2>
+        <div class="quote-grid">
+
+          <article class="card">
+            <span class="theme">Humor</span>
+            <blockquote>
+              <p>“Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”</p>
+              <footer>Attributed to Albert Einstein</footer>
+            </blockquote>
+            <div class="reflection">
+              <h3>My reflection</h3>
+              <p>Write a few sentences about why this quote matters to you.</p>
+              <a href="quote.html">Read full reflection</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="theme">Inspirational</span>
+            <blockquote>
+              <p>“You only live once, but if you do it right, once is enough.”</p>
+              <footer>Mae West</footer>
+            </blockquote>
+            <div class="reflection">
+              <h3>My reflection</h3>
+              <p>Write a few sentences about why this quote matters to you.</p>
+              <a href="quote.html">Read full reflection</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <span class="theme">Humor</span>
+            <blockquote>
+              <p>“A day without sunshine is like, you know, night.”</p>
+              <footer>Steve Martin</footer>
+            </blockquote>
+            <div class="reflection">
+              <h3>My reflection</h3>
+              <p>Write a few sentences about why this quote matters to you.</p>
+              <a href="quote.html">Read full reflection</a>
+            </div>
+          </article>
+
+        </div>
+        <p class="more"><a class="button" href="theme.html">See all quotes</a></p>
+      </div>
+    </section>
+
+    <section class="share" id="share">
+
+       <img src="images/cozy-coffee.jpeg" alt="A cozy cup of coffee">
+
+        <form class="quote-form" action="#" method="post" data-submit-form>
+          <div>
+            <label for="quote">Quote</label>
+            <textarea id="quote" name="quote" rows="4" required></textarea>
+          </div>
+          <div>
+            <label for="author">Author or source</label>
+            <input id="author" name="author" type="text">
+          </div>
+          <div>
+            <label for="theme">Theme</label>
+            <select id="theme" name="theme">
+              <option value="">Choose a theme</option>
+              <option>Inspirational</option>
+              <option>Relatable</option>
+              <option>Humor</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="why">Why it matters to you (optional)</label>
+            <textarea id="why" name="why" rows="3"></textarea>
+          </div>
+          <div>
+            <label for="name">Your name (optional)</label>
+            <input id="name" name="name" type="text">
+          </div>
+          <div class="hp" aria-hidden="true"><label>Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+          <button class="button" type="submit">Send quote</button>
+          <p class="form-status" data-status role="status"></p>
+          <p class="quote-thanks" data-thanks hidden>Thank you! Your quote was received.</p>
+        </form>
+    </section>
+
+  </main>
+
+  <div class="wrap">
+    <footer class="site-footer">
+      <span>insidethoughts.co</span>
+      <ul>
+        <li><a href="#quotes">Quotes</a></li>
+        <li><a href="#themes">Themes</a></li>
+        <li><a href="#share">Share yours</a></li>
+      </ul>
+    </footer>
+  </div>
+<script src="script.js" defer></script>
+</body>
+</html>
